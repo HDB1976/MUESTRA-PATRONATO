@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Barbería 1969</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        .resolucion {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .deskshop {
+                display: none;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .movil {
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 990px) {
+            .deskshop {
+                display: none;
+            }
+
+            .tablet {
+                display: block;
+            }
+
+            .movil {
+                display: none;
+            }
+        }
+
+        @media (min-width: 991px) {
+            .deskshop {
+                display: block;
+            }
+
+            .tablet {
+                display: none;
+            }
+
+            .movil {
+                display: none;
+            }
+        }
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9e9e9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #000;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            position: relative;
+
+
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+
+        div.video.bar {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            text-align: initial;
+
+
+        }
+
+        .logo {
+            display: flex;
+            width: 80px;
+            height: 100px;
+            margin-right: 80%;
+            border-radius: 60%;
+            position: absolute;
+            margin-left: 80%;
+            margin-top: 46%;
+            ;
+
+
+        }
+
+        .title {
+            font-size: 64px;
+            font-family: "Akronim", serif;
+            font-weight: 400;
+            font-size: 90px;
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            left: 50px;
+            text-shadow: 2px 2px 2px #000;
+
+
+
+
+        }
+
+        }
+
+        .contact-info {
+            font: size 64px;
+            margin-right: 80%;
+            margin: 10px 0;
+            text-align:right;
+            border: 0 solid white;
+        }
+
+        .contact-info p:hover {
+            transition: all 2s;
+            transform: scale(2s);
+            color: #00aaff;
+            
+
+        }
+
+        .description {
+            background-color: #1e3d40;
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 20px 0;
+            font-family: "Bona Nova", sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery :hover {
+            transition: all 2s;
+            transform: scale(2);
+        }
+
+        .gallery img {
+            width: 80%;
+            height: 200px;
+            border-radius: 5px;
+            flex-direction: column;
+        }
+
+
+
+        .footer {
+            font-size: 14px;
+            margin-top: 20px;
+            background-color: #1e3d40;
+            text-align: center;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #00aaff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resolucion">
+        <div class="deskshop"></div>
+        <div class="tablet"></div>
+        <div class="movil"></div>
+    </div>
+
+    <div class="container">
+        <!-- Logo y Título -->
+        <div class="video.bar">
+            <img src="fotos/logo.jpg" alt="Logo de La Barbería" class="logo">
+            <h1 class="title">La Barbería 1969</h1>
+            <video autoplay muted loop>
+                <source src="fotos/video.mp4.mp4" </video>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="contact-info">
+            <p>Turnos: 01146223458</p>
+        </div>
+
+        <!-- Descripción -->
+        <div class="description">
+            <p>
+                La Barberia 1969 nace el año que indica su nombre, hace un año y medio que se encuentra en el local de
+                la
+                Calle Presidente Juan Domingo Perón 479, Villa Luzuriaga, La Matanza. Es atendida por su dueño Claudio,
+                quien hará magia tanto con las tijeras como con sus máquinas y navajas. Tu cabello y tu barba quedarán
+                impecables.
+            </p>
+            <p>
+                Cris te recibe siempre con una sonrisa y un abrazo. Tendrán amigables charlas, compartirán mates y
+                cafés.
+                Ir a la Barberia es una experiencia única. ¡Tiene un estilo vintage que no podrás creer! ¿Qué esperas
+                para conocer La Barbería 1969?
+            </p>
+            <p>¡Te esperamos!</p>
+        </div>
+
+        <!-- Galería de Imágenes -->
+        <div class="gallery">
+            <img src="fotos/foto1.jpg" alt="foto1">
+            <img src="fotos/foto2.jpg" alt="foto2">
+            <img src="fotos/foto3.jpg" alt="foto3">
+            <img src="fotos/foto4.jpg" alt="foto4">
+            <img src="fotos/foto5.jpg" alt="foto5">
+            <img src="fotos/foto6.jpg" alt="foto6">
+
+
+        </div>
+
+        <!-- Pie de página -->
+        <div class="footer">
+            <p>Todos los derechos reservados KyC Programación</p>
+            <p>
+                Nuestras redes:
+                <a href="https://www.instagram.com/labarberia1969" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/search/top?q=la%20barberia%20196" target="_blank">Facebook</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html
