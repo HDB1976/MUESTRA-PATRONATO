@@ -10,13 +10,14 @@
     <title>La Barbería 1969</title>
     <style>
         * {
-            box-sizing: border-box;
+            box-sizing:content-box;
 
         }
 
         .resolucion {
-            width: 100%;
+            width: 100px;
             height: auto;
+
         }
 
         @media (max-width: 767px) {
@@ -68,6 +69,7 @@
             background-color: #e9e9e9;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
 
         .container {
@@ -75,23 +77,28 @@
             color: #fff;
             height: 100%;
             width: 100%;
-            text-align: center;
-            position: relative;
+            text-align:center;
+            
 
 
         }
 
         video {
             width: 100%;
-            height: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+
         }
 
         div.video.bar {
-            height: 100%;
+            height: auto;
             overflow: hidden;
             position: relative;
             width: 100%;
             text-align: initial;
+            margin:0%;
+            padding: 0%;
 
 
         }
@@ -104,8 +111,8 @@
             border-radius: 60%;
             position: absolute;
             margin-left: 80%;
-            margin-top: 46%;
-            ;
+            margin-top: 33%;
+            
 
 
         }
@@ -126,14 +133,15 @@
 
         }
 
-        }
+        
 
         .contact-info {
-            font: size 64px;
+            font-size:x-large;
             margin-right: 80%;
-            margin: 10px 0;
-            text-align:right;
+            margin: 10px;
+            text-align:center;
             border: 0 solid white;
+            font-family:"Bona Nova", sans-serif;
         }
 
         .contact-info p:hover {
@@ -147,7 +155,7 @@
         .description {
             background-color: #1e3d40;
             padding: 15px;
-            font-size: 14px;
+            font: size 25px;
             line-height: 1.6;
             margin: 20px 0;
             font-family: "Bona Nova", sans-serif;
@@ -254,4 +262,4 @@
     </div>
 </body>
 
-</html
+</html>
