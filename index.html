@@ -5,6 +5,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Barbería 1969</title>
@@ -110,8 +113,8 @@
             margin-right: 80%;
             border-radius: 60%;
             position: absolute;
-            margin-left: 80%;
-            margin-top: 33%;
+            margin-left:80%;
+            margin-top: 34%;
             
 
 
@@ -119,7 +122,7 @@
 
         .title {
             font-size: 64px;
-            font-family: "Akronim", serif;
+            font-family:"Akronim", system-ui;
             font-weight: 400;
             font-size: 90px;
             position: absolute;
@@ -141,7 +144,7 @@
             margin: 10px;
             text-align:center;
             border: 0 solid white;
-            font-family:"Bona Nova", sans-serif;
+            font-family:"Pirata one", system-ui;
         }
 
         .contact-info p:hover {
@@ -170,7 +173,7 @@
 
         .gallery :hover {
             transition: all 2s;
-            transform: scale(2);
+            transform: scale(1.4);
         }
 
         .gallery img {
@@ -179,6 +182,42 @@
             border-radius: 5px;
             flex-direction: column;
         }
+
+        .form-container {
+
+MARGIN: 50PX AUTO;
+background:  #1e3d40; /* Fondo blanco semitransparente */
+backdrop-filter: blur(10px); /* Efecto de desenfoque */
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+max-width: 400px;
+width: 200PX;
+height:350PX;
+color: white;
+object-fit:cover
+}
+.form-container h2{
+    font-family:"Pirata one", system-ui;
+    font-size: 35px;
+    
+    
+}
+
+/* Estilos para el formulario */
+form {
+display: flex;
+flex-direction: column;
+}
+
+input, textarea {
+margin-bottom: 15px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+}
+
 
 
 
@@ -249,10 +288,23 @@
 
 
         </div>
+        <div class="form-container">
+            <h2>Contacto</h2>
+            <form
+          action="https://formspree.io/f/mldepvkv"
+          method="POST">
+                
+              <input name="nombre" type="text" placeholder="Nombre" required>
+              <input name="correo" type="email" placeholder="Correo Electrónico" required>
+              <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+        
 
         <!-- Pie de página -->
         <div class="footer">
-            <p>Todos los derechos reservados KyC Programación</p>
+            <p>Todos los derechos reservados RyC Programación</p>
             <p>
                 Nuestras redes:
                 <a href="https://www.instagram.com/labarberia1969" target="_blank">Instagram</a>
